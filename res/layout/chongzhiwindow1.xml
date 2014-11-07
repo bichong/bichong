@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      tools:ignore="RequiredSize"
+      android:background="#dddddd"  >
+	<LinearLayout 
+       
+        android:orientation="vertical" 
+        android:id="@+id/loginRoot1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >      
+        <RelativeLayout 
+             android:id="@+id/RelativeLayout01"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15.0px"
+             android:layout_marginRight="15.0px"
+             android:layout_marginTop="5.0px"
+             android:paddingBottom="10.0px"
+             android:paddingTop="20dp" >
+
+             <ImageView
+                 android:id="@+id/ImageView_haoma"
+                 android:layout_width="40.0dip"
+                 android:layout_height="40.0dip"
+                 android:layout_marginBottom="5.0dip"
+                 android:layout_marginLeft="0.0dip"
+                 android:layout_marginRight="0.0dip"
+                 android:layout_marginTop="10.0dip"
+                 android:background="@drawable/menu1_phone" />
+              <AutoCompleteTextView
+                 android:id="@+id/EditText_haoma"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBottom="@id/ImageView_haoma"
+                 android:layout_alignTop="@id/ImageView_haoma"
+                 android:layout_marginRight="1.0dip"
+                 android:layout_toRightOf="@id/ImageView_haoma"
+                 android:background="@drawable/qq_edit_login"
+                 android:hint="要充值的号码"
+                 android:maxLength="11"
+                 android:numeric="integer"
+                 android:textColor="@color/fg_significant"
+                 android:paddingLeft="60.0sp" >
+                 <requestFocus />
+              </AutoCompleteTextView>
+
+              <TextView
+                 android:id="@+id/TextView_haoma"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBottom="@id/EditText_haoma"
+                 android:layout_alignLeft="@id/EditText_haoma"
+                 android:layout_alignTop="@id/EditText_haoma"
+                 android:layout_marginRight="15.0sp"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="7.0sp"
+                 android:text="号码"
+                 android:textColor="#ff3f3f3f"
+                 android:textSize="20sp" />
+           </RelativeLayout>
+              
+          <RelativeLayout 
+             android:id="@+id/RelativeLayout01"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15.0px"
+             android:layout_marginRight="15.0px"
+             android:layout_marginTop="5.0px"
+             android:paddingBottom="10.0px"
+             android:paddingTop="20dp" >
+
+              <ImageView
+                 android:id="@+id/ImageView_money"
+                 android:layout_width="40.0dip"
+                 android:layout_height="40.0dip"
+                 android:layout_marginBottom="2.0dip"
+                 android:layout_marginLeft="0.0dip"
+                 android:layout_marginRight="0.0dip"
+                 android:layout_marginTop="2.0dip"
+                 android:background="@drawable/menu1_money" />
+
+              <TextView
+                 android:id="@+id/TextView_money"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBottom="@id/ImageView_money"
+                 android:layout_toRightOf="@+id/ImageView_money"
+                 android:layout_alignTop="@id/ImageView_money"
+                 android:layout_marginRight="15.0sp"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="7.0sp"
+                 android:text="选择面值"
+                 android:textColor="#ff3f3f3f"
+                 android:textSize="20sp" />
+                
+               <Spinner android:id="@+id/Spinner"   
+                 android:layout_width="fill_parent"  
+           		 android:layout_height="wrap_content"  
+				 android:layout_alignBottom="@id/ImageView_money"
+                 android:layout_alignTop="@id/ImageView_money"
+                 android:layout_marginRight="1.0dip"
+                 android:layout_toRightOf="@id/TextView_money"
+                 android:gravity="center_vertical"
+                 android:textColor="#ff3f3f3f"
+                 android:paddingLeft="45.0sp"></Spinner>
+              
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="?android:attr/dividerHorizontal"
+		android:dividerPadding="0dp"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true" 
+		android:showDividers="beginning" >           
+        <LinearLayout
+			style="?android:attr/buttonBarStyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:measureWithLargestChild="true"
+			android:orientation="horizontal" >
+
+			<Button
+				android:id="@+id/cancel"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="0px"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:text="取消"
+				android:textSize="@dimen/font_size_small" />
+				
+			<Button
+				android:id="@+id/go"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="0px"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:text="提交"
+				android:textSize="@dimen/font_size_small"
+				android:textStyle="bold" />
+		</LinearLayout>
+    </LinearLayout>        
+</RelativeLayout>

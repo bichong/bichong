@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      tools:ignore="RequiredSize"
+      android:background="@color/fg_insignificant" >
+	
+<LinearLayout 
+        android:orientation="vertical" 
+        android:id="@+id/loginRoot1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        >    
+        
+        <TextView
+            android:id="@+id/TextView_haoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="充值号码："
+            android:textColor="@color/fg_significant"
+            android:textSize="20sp" />  
+         <EditText
+                 android:id="@+id/EditText_haoma"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+               
+                 android:hint="要充值的号码"
+                 android:maxLength="11"
+                 android:numeric="integer"
+                 android:textColor="#ff3f3f3f"
+                 android:textSize="20sp"
+                 android:layout_marginLeft="10.0dp"
+                 android:layout_marginRight="10.0dp"
+                 android:layout_marginTop="20.0dp" >
+                 <requestFocus />
+          </EditText>
+     <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/loginRoot1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp">
+          <TextView
+                 android:id="@+id/TextView_money"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingLeft="10dp"
+                 android:text="充值面额："
+                 android:textColor="@color/fg_significant"
+                 android:textSize="20sp" />
+          <Spinner android:id="@+id/Spinner" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:layout_marginRight="10dp" 
+              android:paddingLeft="10dp" 
+              android:textColor="#ff3f3f3f"/>
+                
+               
+   </LinearLayout>
+</LinearLayout>
+    
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="?android:attr/dividerHorizontal"
+		android:dividerPadding="0dp"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true" 
+		android:showDividers="beginning" >           
+        <LinearLayout
+			style="?android:attr/buttonBarStyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:measureWithLargestChild="true"
+			android:orientation="horizontal" >
+
+			<Button
+				android:id="@+id/cancel"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="0px"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:text="取消"
+				android:textSize="@dimen/font_size_small" />
+			<Button
+				android:id="@+id/onceAgain"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="0px"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:text="重新提交"
+				android:visibility="gone"
+				android:textSize="@dimen/font_size_small" />
+				
+			<Button
+				android:id="@+id/go"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="0px"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:maxLines="2"
+				android:text="提交"
+				android:textSize="@dimen/font_size_small"
+				android:textStyle="bold" />
+		</LinearLayout>
+    </LinearLayout>        
+</RelativeLayout>

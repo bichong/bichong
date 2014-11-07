@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:background="#dddddd"
+android:orientation="vertical" >
+
+<fragment
+			android:id="@+id/wallet_address_fragment1"
+			android:name="xi.zhao.wallet.ui.WalletAddressFragment"
+			android:layout_width="wrap_content"
+			android:layout_height="0dp"
+			android:layout_marginBottom="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1.6"
+			android:layout_marginTop="5dp"
+			android:background="#ffffff"
+			 />
+	
+    <TableRow android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" >
+        <Button 
+  			 android:id="@+id/receive"
+             android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+              android:layout_marginTop="1dp"
+             android:layout_marginRight="1dp"
+             android:background="@drawable/button_selector"
+   			 android:text="收款"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/receive"
+  		/>
+
+        <Button
+  			 android:id="@+id/send"
+             android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+             android:layout_marginTop="1dp"
+             android:layout_marginRight="1dp"
+             android:background="@drawable/button_selector"
+   			 android:text="付款"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/send"
+  		/>
+       
+        <Button
+  			 android:id="@+id/camera"
+             android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+             android:layout_marginTop="1dp"
+             android:background="@drawable/button_selector"
+             android:text="扫描付款"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/camera"
+  		/>    
+      
+    </TableRow>
+ 
+    <TableRow android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" >
+           
+       <Button 
+            android:id="@+id/record"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/button_selector"
+             android:text="交易记录"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/record" />
+       <Button 
+           
+            android:id="@+id/huafei"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" 
+             android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/button_selector"
+             android:text="充值话费"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="15dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/huafei"/>
+       <Button 
+
+            android:id="@+id/exchangerate"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/button_selector"
+            android:text="汇率"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="25dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/exchange_rate" />
+    </TableRow>
+    
+    <TableRow android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" >
+        <Button 
+
+            android:id="@+id/labels"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+             android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/button_selector"
+            android:text="地址薄"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/labels" />
+        <Button 
+
+            android:id="@+id/backup"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" 
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/button_selector"
+            android:text="备份私钥"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/backup"/>
+        <Button 
+
+            android:id="@+id/restore"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/button_selector"
+            android:text="导入私钥"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/restore" />
+    </TableRow>
+    
+     <TableRow android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" >
+        <Button 
+
+            android:id="@+id/netinfo"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+             android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/button_selector"
+            android:text="网络信息"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/netinfo" />
+        
+        <Button 
+
+            android:id="@+id/attention"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/button_selector"
+            android:text="用户须知"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/attention" />
+        <Button 
+
+            android:id="@+id/about"
+            android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" 
+            android:layout_marginTop="1dp"
+            
+            android:background="@drawable/button_selector"
+            android:text="关于"
+    		android:textSize="12sp"
+   			android:textColor="@color/fg_less_significant"
+    		android:paddingLeft="5dp"
+    		android:paddingTop="20dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="0dp"    	
+   			 android:drawableTop="@drawable/about"/>
+    </TableRow>
+    
+</LinearLayout> 

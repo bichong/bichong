@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	tools:ignore="RequiredSize" >
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="8dp"
+		android:text="@string/send_coins_fragment_receiving_address_label"
+		android:textColor="#000"
+		android:textSize="@dimen/font_size_small"
+		android:textStyle="bold" />
+
+	 <TextView
+	    android:id="@+id/chongzhi_adress"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="8dp"
+		
+		android:textSize="@dimen/font_size_small"
+		android:textStyle="bold" />
+	    
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="8dp"
+		android:text="@string/send_coins_fragment_amount_label"
+		android:textSize="@dimen/font_size_small"
+		android:textStyle="bold" />
+
+	
+
+	    <TextView
+	    android:id="@+id/chongzhi_blance"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="8dp"
+		
+		android:textSize="@dimen/font_size_small"
+		android:textStyle="bold" />
+	    
+	
+
+
+
+
+</LinearLayout>

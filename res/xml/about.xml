@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<PreferenceCategory android:title="@string/about_title" >
+		<Preference
+			android:key="about_version"
+			android:title="Version" />
+		<Preference
+			android:summary="© 2013-2014, BiChong"
+			android:title="Copyright" />
+		<Preference
+			android:key="about_license"
+			android:title="@string/about_license_title" />
+		<Preference android:key="about_credits_bitcoinj" />
+		<Preference
+			android:key="about_credits_zxing"
+			android:title="@string/about_credits_zxing_title" />
+		<Preference
+			android:key="about_bitcoin_wallet"
+			android:title="@string/about_bitcoin_wallet_title" />
+		
+	</PreferenceCategory>
+
+</PreferenceScreen>

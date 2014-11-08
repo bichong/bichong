@@ -39,15 +39,7 @@ public final class AboutActivity extends SherlockPreferenceActivity
 {
 	private static final String KEY_ABOUT_VERSION = "about_version";
 	private static final String KEY_ABOUT_LICENSE = "about_license";
-	//private static final String KEY_ABOUT_SOURCE = "about_source";
-	private static final String KEY_ABOUT_CREDITS_BITCOINJ = "about_credits_bitcoinj";
-	private static final String KEY_ABOUT_CREDITS_ZXING = "about_credits_zxing";
-	//private static final String KEY_ABOUT_CREDITS_ICON = "about_credits_icon";
 	private static final String KEY_ABOUT_BITCOIN_WALLET = "about_bitcoin_wallet";
-	//private static final String KEY_ABOUT_AUTHOR_TWITTER = "about_author_twitter";
-	// static final String KEY_ABOUT_AUTHOR_GOOGLEPLUS = "about_author_googleplus";
-	//private static final String KEY_ABOUT_MARKET_APP = "about_market_app";
-	//private static final String KEY_ABOUT_MARKET_PUBLISHER = "about_market_publisher";
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState)
@@ -61,14 +53,7 @@ public final class AboutActivity extends SherlockPreferenceActivity
 
 		findPreference(KEY_ABOUT_VERSION).setSummary(((WalletApplication) getApplication()).packageInfo().versionName);
 		findPreference(KEY_ABOUT_LICENSE).setSummary(Constants.LICENSE_URL);
-		//findPreference(KEY_ABOUT_SOURCE).setSummary(Constants.SOURCE_URL);
-		findPreference(KEY_ABOUT_CREDITS_BITCOINJ).setTitle(getString(R.string.about_credits_bitcoinj_title, VersionMessage.BITCOINJ_VERSION));
-		findPreference(KEY_ABOUT_CREDITS_BITCOINJ).setSummary(Constants.CREDITS_BITCOINJ_URL);
-		findPreference(KEY_ABOUT_CREDITS_ZXING).setSummary(Constants.CREDITS_ZXING_URL);
 		findPreference(KEY_ABOUT_BITCOIN_WALLET).setSummary(Constants.BITCOIN_WALLET);
-		//findPreference(KEY_ABOUT_CREDITS_ICON).setSummary(Constants.CREDITS_ICON_URL);
-		//findPreference(KEY_ABOUT_MARKET_APP).setSummary(String.format(Constants.MARKET_APP_URL, getPackageName()));
-		//findPreference(KEY_ABOUT_MARKET_PUBLISHER).setSummary(Constants.MARKET_PUBLISHER_URL);
 	}
 
 	@Override
@@ -93,26 +78,11 @@ public final class AboutActivity extends SherlockPreferenceActivity
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.LICENSE_URL)));
 			finish();
 		}
-		else if (KEY_ABOUT_CREDITS_BITCOINJ.equals(key))
-		{
-			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_BITCOINJ_URL)));
-			finish();
-		}
-		else if (KEY_ABOUT_CREDITS_ZXING.equals(key))
-		{
-			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_ZXING_URL)));
-			finish();
-		}
 		else if (KEY_ABOUT_BITCOIN_WALLET.equals(key))
 		{
 			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.BITCOIN_WALLET)));
 			finish();
 		}
-//		else if (KEY_ABOUT_CREDITS_ICON.equals(key))
-//		{
-//			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.CREDITS_ICON_URL)));
-//			finish();
-//		}
 		
 		
 

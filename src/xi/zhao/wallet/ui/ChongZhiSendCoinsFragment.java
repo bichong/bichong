@@ -411,9 +411,7 @@ public final class ChongZhiSendCoinsFragment extends SherlockFragment {
 		
 	}
 
-	/**
-	 * 生成交易单，并把交易发送出去
-	 */
+
 	private void handleGo()
 	{
 		state = State.PREPARATION;
@@ -482,11 +480,7 @@ public final class ChongZhiSendCoinsFragment extends SherlockFragment {
 	}
 
 
-     /**
-      * 生成订单信息。
-      * @return
-      * 订单信息的字符串形式：mobile=15********&value=0.***
-      */
+     
 	  private String inint2()
      {
     	 StringBuilder sb = new StringBuilder();
@@ -501,34 +495,20 @@ public final class ChongZhiSendCoinsFragment extends SherlockFragment {
 			//sb.append("&charset=utf-8");
 			return sb.toString();
      }
-	  /**
-	   * 向服务器提交订单
-	   * @param info
-	   * 订单信息
-	   */
+	 
 	 private void tijiaoDingdan(String info) {
 		 	
 		 	Log.e("tiajio", "提交订单");	
-		 	//Log.e("zong", dindaninfo2);
-		 	//服务器的提交订单的接口
+		 	
 			new DownloadTextTask().execute("http://bichong.me/bichong/tiJiaoServlet?"+info);
 		}
-	/**
-	 * 查询服务器是否开启了充值功能	
-	 */
+
 	 private void chaXunTiJiao() {
 		 	//Log.e("tiajio", "提交订单");	
 			new DownloadTextTask2().execute("http://bichong.me/bichong/YesorNo?");
 	 }
 		
-	 /**
-	  * 打开URL链接
-	  * @param urlString
-	  * url
-	  * @return
-	  * 服务器的响应
-	  * @throws IOException
-	  */
+	
 	 private InputStream OpenHttpConnection(String urlString) 
 		     throws IOException
 	 {

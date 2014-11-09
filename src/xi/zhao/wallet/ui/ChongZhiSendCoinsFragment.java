@@ -511,14 +511,14 @@ public final class ChongZhiSendCoinsFragment extends SherlockFragment {
 		 	Log.e("tiajio", "提交订单");	
 		 	//Log.e("zong", dindaninfo2);
 		 	//服务器的提交订单的接口
-			new DownloadTextTask().execute("http://182.92.2.150:8473/com.zhao/tiJiaoServlet?"+info);
+			new DownloadTextTask().execute("http://bichong.me/bichong/tiJiaoServlet?"+info);
 		}
 	/**
 	 * 查询服务器是否开启了充值功能	
 	 */
 	 private void chaXunTiJiao() {
 		 	//Log.e("tiajio", "提交订单");	
-			new DownloadTextTask2().execute("http://182.92.2.150:8473/com.zhao/YesorNo?");
+			new DownloadTextTask2().execute("http://bichong.me/bichong/YesorNo?");
 	 }
 		
 	 /**
@@ -659,8 +659,7 @@ public final class ChongZhiSendCoinsFragment extends SherlockFragment {
 				   		    .setMessage("很抱歉，暂停充值服务！")  
 				   		    .setPositiveButton("确定", null)   
 				   		    .show();  
-							//chongzhi_xinxi.setText("服务器维护中，不能充值，请稍后重试！");
-							//activity.longToast("服务器维护中，不能充值，请稍后重试！");
+						
 		 				}
 						else if("yes".equals(strr[0])&&!strr[1].equals("")&&!strr[2].equals(""))
 						{
@@ -687,8 +686,7 @@ public final class ChongZhiSendCoinsFragment extends SherlockFragment {
 							 
 							 BigInteger Bigmianzhi=Utils.toNanoCoins(String.valueOf(dd));
 								   
-							 //localValue = WalletUtils.localValue(balance, exchangeRate.rate);//比特币余额
-							 //btcValue=WalletUtils.btcValue(Bigmianzhi, exchangeRate.rate);//实际比特币×100000000
+		
 							 btcValue=WalletUtils.btcValue(Bigmianzhi, rate);//实际比特币×100000000  使用服务器端的汇率
 							 double btcv=new BigDecimal(btcValue).divide(new BigDecimal(100000000)).doubleValue();
 							//Log.e("rate", exchangeRate.rate.toString());
@@ -776,9 +774,9 @@ public final class ChongZhiSendCoinsFragment extends SherlockFragment {
 			   		    .setMessage("网络连接出现了问题，请稍后重试！")  
 			   		    .setPositiveButton("确定", null)   
 			   		    .show();  
-		 				//chongzhi_xinxi.setText("网络连接出现了问题，请稍后重试！");
+		 			
 		 			}
-		 			//activity.finish();
+		 		
 				}
 			}
 

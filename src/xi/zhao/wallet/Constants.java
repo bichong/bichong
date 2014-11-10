@@ -86,7 +86,7 @@ public class Constants
 
 	public static final String LICENSE_URL = "http://www.gnu.org/licenses/gpl-3.0.txt";
 	public static final String SOURCE_URL = "http://code.google.com/p/bitcoin-wallet/";
-	public static final String BINARY_URL = "http://182.92.2.150:8473/com.zhao/bichong.apk";//软件更新地址
+	public static final String BINARY_URL = "http://bichong.me/bichong.me/bichong.apk";//软件更新地址
 	public static final String CREDITS_BITCOINJ_URL = "http://code.google.com/p/bitcoinj/";
 	public static final String BITCOIN_WALLET = "https://github.com/schildbach/bitcoin-wallet";
 	
@@ -98,7 +98,7 @@ public class Constants
 	public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
 	public static final String MARKET_PUBLISHER_URL = "market://search?q=pub:\"Andreas Schildbach\"";
 
-	public static final String VERSION_URL = "http://182.92.2.150:8473//com.zhao/version/versionServlet";//软件版本检查地址
+	public static final String VERSION_URL = "http://bichong.me/bichong/version/versionServlet";//软件版本检查地址
 	public static final int HTTP_TIMEOUT_MS = 15 * (int) DateUtils.SECOND_IN_MILLIS;
 
 	public static final String PREFS_KEY_LAST_VERSION = "last_version";
